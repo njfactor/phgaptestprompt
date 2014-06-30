@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-
-  </head>
-  <body>
-<button onclick="prompt('enter')">click</button>
-  </body>
+<head>
+ <script>
+var qty;
+function prompt_box() 
+{
+qty = prompt("Name  "+"Price\nEnter Quantity", "1");
+}
+document.getElementById("demo").innerHTML =qty;
+</script>
+</head>
+ <body>
+<button onclick="prompt_box()">click</button>
+<p id="demo"></p> 
+ </body>
 </html>
