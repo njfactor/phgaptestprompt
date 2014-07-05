@@ -5,13 +5,15 @@
 var qty;
 function prompt_box() 
 {
-qty = prompt("Name  "+"Price\nEnter Quantity", "1");
+qty = prompt("Name  "+"Price\nEnter Quantity", "1","scroll");
+document.getElementById('demo').innerHTML =qty;
 }
-document.getElementById("demo").innerHTML =qty;
+
 </script>
 </head>
  <body>
 <button onclick="prompt_box()">click</button>
+<input type="number" name="spin" id="qt__'+pdId+'" value='+qty+' min="1"  onmouseout = "alert('mouse out working')" />
 <p id="demo"></p> 
  </body>
 </html>
